@@ -1,3 +1,3 @@
-##flexbox layout xercise
+##flexbox layout exercise
 
 simple layout from image using flexbox
