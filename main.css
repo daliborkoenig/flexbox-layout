@@ -18,7 +18,7 @@ main{
   background-color: #fff;
   border-radius: 10px;
   /* border: 1px solid black; */
-  height: 100px;
+  height: 10vh;
   width: 24%;
   font-weight: bolder;
   align-items: center;
@@ -80,32 +80,27 @@ main{
 }
 
 .text{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 2%;
   width: 70%;
   height: 100%;
 }
 
 .text h3{
-  padding: 5%;
+  padding-left: 5%;
   color: black;
 }
 
 .minif{
-  padding: 5%;
+  padding-left: 5%;
+  font-size: 0.8vw;
 }
 
-.aside{
-  padding: 5%;
-  height: 70vh;
-  border-radius: 10px;
-  /* border: 1px solid black; */
-  width: 24%;
-  background-color: #edf2f7;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
+
 
 .button{
   margin-left: 5%;
-  margin-top: 5%;
   padding: 5%;
   background-color: #e9d8fd;
   border-radius: 10px;
@@ -113,10 +108,22 @@ main{
   height: 20%;
   display: inline-flex;
   align-items: center; 
+  font-size: 0.8vw;
   }
 
 div .minif p:nth-child(1){
   font-weight: bolder;
+}
+
+.aside{
+  padding: 3%;
+  height: 70vh;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+  width: 24%;
+  background-color: #edf2f7;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 0.9vw;
 }
 
 li{
@@ -125,12 +132,56 @@ li{
 
 .button2{
   color: #fff;
-  /* padding: 5%; */
-  padding-left: 12%;
   background-color: #657eea;
   border-radius: 30px;
   width: 80%;
   height: 8%;
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   align-items: center; 
+  }
+
+  @media screen and (max-width: 765px){
+    .header{
+      text-align: center;
+    }
+    .container-links{
+      /* border: 1px solid black; */
+      width: 100%;
+      flex-wrap: wrap;
+      flex-direction: row;
+
+    }
+
+    .link-main{
+      background-color: #fff;
+      border-radius: 10px;
+      /* border: 1px solid black; */
+      height: 10vh;
+      width: 48%;
+      font-weight: bolder;
+      align-items: center;
+      flex-direction: row;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      margin: 1%;
+    }
+
+    .aside{
+      display: none;
+    }
+    .container-articles-main{
+      width: 99%;
+      font-size: 2vw;
+      margin: 1%;
+      justify-content: spac;
+    }
+    .container-articles{
+      width: 100%;
+    }
+    .button{
+      font-size: 1.8vw;
+    }
+    .minif{
+      font-size: 1.8vw;
+    }
   }

@@ -45,3 +45,17 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 765px){
+  .search{
+    display: none;
+  }
+  .links{
+    display: none;
+  }
+  #logo{
+  width: 100%;
+  justify-content: center;
+  }
+  
+}
